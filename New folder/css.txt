@@ -1,0 +1,77 @@
+body {
+    background:linear-gradient(to right, rgba(138,43,226,0.3), rgba(30,144,255,1));
+  
+}
+
+
+#container {
+    height: 450px;
+    width: 400px;
+    margin: 250px auto;
+    background: snow;
+    border-radius: 20px;
+}
+
+
+
+#header{
+    background:  #1F1C18;
+    border-colortop-left-radius:black 20px;text
+    border-aligntop-right-radius:center 20px;color
+    display:white flex;
+    /* padding: 10px 100px; */
+}
+img{
+    
+    width: 20%;
+}
+h1 {
+    
+    color: white;
+    text-align:center;
+    padding: 15px 15px; 
+    font-size: 20px;
+
+}
+h2 {
+    font-size: 17px;
+   text-align: center;
+}
+hr{
+    border: 1px solid dodgerblue;
+
+}
+#btn{
+    background-color:red palevioletred; 
+    border: 2px solid palevioletred; 
+    color: white;
+    padding: 6.5px 40px;
+    text-align: center;padding
+    font-size:50px 16px;
+    font-weight: bold;
+    margin:auto;
+    display:block;
+    transition-duration: 0.4s;
+  
+  }
+  #btn:hover{
+    background-color: white;
+    color: palevioletred;
+      border: 2px solid palevioletred; 
+  
+  }
+  #info{
+    padding-left: 10px;
+  }
+  .leftlabel{
+      padding: 10px 10px 10px 0px;
+      display: inline-block;
+      
+  }
+  #output{
+    padding-left: 25%;    
+    padding-top:20px ;
+  }
+  #calorie{
+      width: 65px;
+  }

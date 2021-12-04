@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+    <link rel="stylesheet" href="test.css">
+    <script type="text/javascript" src="test.js"></script>
+    </head>
+  <body>
+    
+    <div id="container">
+    <h1> Book Recommendation </h1>
+    <div id="subContainer">
+    <p> Choose your preferred search option: </p>
+    <div id="rad">
+       <input type="radio" name="pref" id= "op0" value="genre" checked  onchange="radioButtonCheck()"> Genre<br>
+    <input type="radio" name="pref" id= "op1" value="language"onchange="radioButtonCheck()"> Language<br>
+   
+    <input type="radio" name="pref" id= "op2" value="both" onchange="radioButtonCheck()" > Both <br> <br>
+   </div>
+    </div>
+    
+    <div id="input_options">
+    <select id = "genre" onchange="checkDropDown('genre')" class="sel">
+    
+      <option value=""  disabled selected >Genre</option>
+      <option value="Novel">Novel</option>
+      <option value="Fiction">Fiction</option>
+      <option value="Narrative">Narrative</option>
+      <option value="Mystery">Mystery</option>
+      
+    
+    </select>
+    <select class="sel" id ="sel1" disabled selected onchange="checkDropDown('sel1')">
+      
+      <option value="" disabled selected>Language</option>
+      <option value="English">English</option>
+      <option value="French">French</option>
+ 
+    </select> 
+          <button id="out" type="button" onclick="recommendBook()">Suggest Book!</button> 
+           <input id="output" type="text">
+	<img id="bigpic" src="" class ="image" style="display:none;">
+      </div>
+    <br>
+    </div>
+ </body>
+</html>

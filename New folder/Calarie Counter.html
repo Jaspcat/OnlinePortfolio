@@ -1,0 +1,94 @@
+ code for basic layout of calorie tracker app
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <div id="container">
+        <div id="header">
+          <img src="runner.png">
+            <h1 >Daily Calorie Intake Calculator</h1>
+     </div>
+        <div>
+        <h2>Help maintain your diet and weight loss plan</h2>
+        </div>
+        <div id="info">
+
+          <p>Age(15-80) <input id="age"type="number" placeholder="25" min="15" max="80"></p> 
+<!-- produces a box with the heading Age(15-80) only numbers can be entered and they have to be between 15-80-->
+          
+	  <p>Gender <input type="radio" name="gender" id="male" checked>
+            <label>Male</label>
+            <input type="radio" name="gender" id="female">
+                   <label>Female</label></p>
+<!-- produces a bullit point selection of male or female.-->
+
+     	  <p>Weight(40-200kg) <input id="weight" type="number" placeholder="65" min= "40" max="200"></p>
+<!-- produces a box to inpute weight-->
+
+          <p>Height(130-250cm)<input id ="height"type="number"placeholder="180"min="130"max="250"></p>
+<!-- produces a box to inpute height-->
+
+          <p>Activity<select id="activity">
+           <option value="vLight"selected>Very Light</option>
+           <option value="light">Light</option>
+           <option value="moderate">Moderate</option>
+           <option value="heavy">Heavy</option>
+           <option value="vheavy">Very Heavy</option>
+          </select></p>
+<!-- produces a drop down menu for activity level-->
+        </div>
+        <button id="btn" onclick="calculate()">Calculate</button>
+        <hr>
+        <div id="output">
+          <p>Calorie Intake <input id="calorie" type="number"readonly> Kcal</p>
+        </div>
+        </body>
+</html>
+
+
+
+
+
+ <html>
+  <link rel="stylesheet" href="Codingville Example.css">
+  <body>
+    <div class="sec1">	
+      <!--h1 and p here-->
+      <h1>
+        This is heading 1
+      </h1>
+
+      <p>
+        This is paragraph 1
+      </p>
+    </div>
+
+    <div class="sec2">
+      <!--h1 and p here-->
+      <h1>
+        This is heading 2
+      </h1>
+
+      <p>
+        this is paragraph 2
+      </p>
+    </div> 
+  </body> 
+</html>
+
+
+CSS code for above
+
+body{
+  background-color: #00BFFF;
+}
+
+.sec1{
+  background-color: green;
+  color: yellow;
+}
+
+.sec2{
+ background-color: yellow;
+  color:green;
+}

@@ -1,0 +1,37 @@
+ code for basic layout of calorie tracker app
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <div id="container">
+        <div id="header">
+          <img src="runner.png">
+            <h1 >Daily Calorie Intake Calculator</h1>
+     </div>
+        <div>
+        <h2>Help maintain your diet and weight loss plan</h2>
+        </div>
+        <div id="info">
+          <p>Age(15-80) <input id="age"type="number" placeholder="25" min="15" max="80"></p>
+          <p>Gender <input type="radio" name="gender" id="male" checked>
+            <label>Male</label>
+            <input type="radio" name="gender" id="female">
+                   <label>Female</label>
+        </p>
+     <p>Weight(40-200kg) <input id="weight" type="number" placeholder="65" min= "40" max="200"></p>
+       <p>Height(130-250cm)<input id ="height"type="number"placeholder="180"min="130"max="250"></p>
+         <p>Activity<select id="activity">
+           <option value="vLight"selected>Very Light</option>
+  <option value="light">Light</option>
+  <option value="moderate">Moderate</option>
+           <option value="heavy">Heavy</option>
+           <option value="vheavy">Very Heavy</option>
+          </select></p>
+        </div>
+        <button id="btn" onclick="calculate()">Calculate</button>
+        <hr>
+        <div id="output">
+          <p>Calorie Intake <input id="calorie" type="number"readonly> Kcal</p>
+        </div>
+        </body>
+</html>
